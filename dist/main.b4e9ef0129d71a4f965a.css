@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    margin: auto;
+}
+
+.header{
+    height: 7vh;
+    background-color: rgb(14, 112, 168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 80px;
+    height: 40px;
+    background-image: url(assets/logo.png);
+}
+
+.menu{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(213, 205, 224);
+    height: 93vh;
+}
+
+.helper{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+}
+
+.helper2{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+.game{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+    height: 75%;
+    background-color: rgb(91, 73, 179);
+}
+
+.stop-watch{
+    font-size: 24px;
+    font-family: cursive;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    grid-gap: 30px;
+    perspective: 40rem;
+}
+
+
+.card{
+    position: relative;
+    width: 168px;
+    height: 168px;
+    transform-style: preserve-3d;
+    transition:all .5s;
+}
+
+
+.card__back{
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(assets/card-back.jpg);
+    backface-visibility: hidden;
+}
+
+.card__front{
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transform: rotateY(180deg);
+}
+
+.flip{
+transform: rotateY(180deg);
+}
+
+.form{
+    width: 500px;
+    height: 500px;
+    background-color: blueviolet;
+    display: grid;
+    align-items: center;
+    justify-content: left;
+}
+
+.input{
+    height: 30px;
+    width: 255px;
+    BACKGROUND-COLOR: lightblue;
+}
+
+.button{
+    height: 40px;
+    width: 100px;
+    background-color: aqua;
+}
+
+
+
+
